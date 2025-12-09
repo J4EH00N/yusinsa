@@ -1,15 +1,12 @@
 import ProductList from '@/components/ui/shared/product/product-list'
-import sampleData from '@/lib/sample-data'
-import { Product } from '@/types'
-export default function Home() {
-  const validatedProducts: Product[] = sampleData.products.map((product) => ({
-    ...product,
-    isFeatured: product.isFeatured ?? false,
-  }))
+import { getAllProducts } from '@/lib/actions/product.actions'
+
+export default async function Home() {
+  const latestProducts = await getAllProducts()
   return (
     <div className="space-y-8">
       <h2 className="h2-bold">Latest Products</h2>
-      <ProductList data={validatedProducts} />
+      <ProductList data={latestProducts} />
     </div>
   )
 }

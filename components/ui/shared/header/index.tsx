@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { APP_NAME } from '@/lib/constants'
+import UserButton from './user-button'
 
 const Header = async () => {
   return (
@@ -27,12 +28,7 @@ const Header = async () => {
               Cart
             </Link>
           </Button>
-          <Button asChild>
-            <Link href="/cart">
-              <ShoppingCart />
-              Sign In
-            </Link>
-          </Button>
+          <UserButton />
         </div>
       </div>
     </header>
