@@ -2,7 +2,7 @@ import { getProductBySlug } from '@/lib/actions/product.actions'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+
 import { Badge } from '@/components/ui/badge'
 import AddToCart from '@/components/ui/shared/product/add-to-cart'
 

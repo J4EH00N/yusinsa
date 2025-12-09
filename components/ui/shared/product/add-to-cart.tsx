@@ -6,7 +6,7 @@ import { CartItem } from '@/types';
 import { Plus } from 'lucide-react';
 import { useTransition } from 'react';
 import { useRouter } from 'next/navigation';
-import { useToast } from '@/hooks/use-toast'; // Assuming we have shadcn toast or simple alert for now
+
 
 export default function AddToCart({ item }: { item: CartItem }) {
     const router = useRouter();

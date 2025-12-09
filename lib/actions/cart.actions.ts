@@ -2,7 +2,7 @@
 
 import { auth } from "@/auth";
 import { db } from "@/db/drizzle";
-import { carts, products } from "@/db/schema";
+import { carts } from "@/db/schema";
 import { CartItem } from "@/types";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";

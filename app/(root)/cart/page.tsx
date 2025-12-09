@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { APP_NAME } from '@/lib/constants';
+
 
 export default async function CartPage() {
     const cart = await getMyCart();
